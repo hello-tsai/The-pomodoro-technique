@@ -1,44 +1,33 @@
 <template>
-  <div id="app">
-      <popup></popup>
-      <time-title></time-title>
-      <Time ></Time>
-  </div>
+    <div id="app">
+        <popup></popup>
+        <time-title></time-title>
+        <Time></Time>
+    </div>
 </template>
 
 <script>
-import TimeTitle from "./components/TimeTitle";
-import Time from "./components/Time";
-import popup from "./components/common/popup";
-export default {
-   components:{
-     TimeTitle,
-      Time,
-       popup,
-   },
-    data(){
-       return{
+    import TimeTitle from "./components/TimeTitle";
+    import Time from "./components/Time";
+    import popup from "./components/common/popup";
 
-       }
-    },
-    methods:{
-        aaa(){
-            clearInterval(this.time)
-        },
-        bbb(){
-            clearInterval(this.time)
-        },
+    export default {
+        components: {
+            TimeTitle,
+            Time,
+            popup,
+        }
     }
-}
 </script>
 
 <style>
-  @import "assets/styles/global.scss";
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    @import "assets/styles/global.scss";
 
-  color: #2c3e50;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        color: #2c3e50;
+    }
 </style>
